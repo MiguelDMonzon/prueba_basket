@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Estadística baloncesto</a>
+            </div>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Panel de control</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Gráficas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GraficasJugadores.html">Métricas por jugador</a>
+                                </li>
+                                <li>
+                                    <a href="GraficasPartidos.html">Métricas por partido</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-table fa-fw"></i> Tablas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="TablaTodos.html">Todos los datos</a>
+                                </li>
+                                <li>
+                                    <a href="TablaJugadores.html">Datos jugadores</a>
+                                </li>
+                                <li>
+                                    <a href="TablaPartidos.html">Datos partidos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Tabla con datos de los partidos.</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Porcentajes en los partidos.
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <td>Fase</th>
+      <td>Jornada</th>
+      <td>Equipo Rival</th>
+      <td>%T1</th>
+      <td>%Entradas</th>
+      <td>%T2</th>
+      <td>%T2 + Entradas</th>
+      <td>%T3</th>
+      <td>%TC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>El Valle A</td>
+      <td>60.00</td>
+      <td>34.48</td>
+      <td>33.33</td>
+      <td>34.29</td>
+      <td>41.18</td>
+      <td>36.54</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5</td>
+      <td>Maristas Conde de Orgaz</td>
+      <td>70.97</td>
+      <td>41.67</td>
+      <td>75.00</td>
+      <td>58.33</td>
+      <td>46.15</td>
+      <td>54.05</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6</td>
+      <td>Menesiano</td>
+      <td>68.75</td>
+      <td>83.33</td>
+      <td>21.43</td>
+      <td>50.00</td>
+      <td>30.00</td>
+      <td>41.30</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7</td>
+      <td>Boadilla</td>
+      <td>57.14</td>
+      <td>35.71</td>
+      <td>25.00</td>
+      <td>31.82</td>
+      <td>38.46</td>
+      <td>34.29</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8</td>
+      <td>El Valle A</td>
+      <td>60.00</td>
+      <td>75.00</td>
+      <td>27.78</td>
+      <td>42.31</td>
+      <td>27.27</td>
+      <td>37.84</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>9</td>
+      <td>Obispo Perello</td>
+      <td>70.00</td>
+      <td>77.78</td>
+      <td>18.18</td>
+      <td>45.00</td>
+      <td>50.00</td>
+      <td>47.37</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10</td>
+      <td>Maristas Conde de Orgaz</td>
+      <td>47.83</td>
+      <td>61.11</td>
+      <td>18.18</td>
+      <td>44.83</td>
+      <td>47.62</td>
+      <td>46.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>Boadilla</td>
+      <td>64.52</td>
+      <td>64.29</td>
+      <td>14.81</td>
+      <td>40.00</td>
+      <td>42.86</td>
+      <td>40.58</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>Obispo Perello</td>
+      <td>43.33</td>
+      <td>63.64</td>
+      <td>28.57</td>
+      <td>50.00</td>
+      <td>19.05</td>
+      <td>33.33</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>Velilla</td>
+      <td>85.71</td>
+      <td>66.67</td>
+      <td>25.00</td>
+      <td>52.78</td>
+      <td>26.09</td>
+      <td>42.37</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td>San Patricio</td>
+      <td>45.00</td>
+      <td>72.73</td>
+      <td>0.00</td>
+      <td>53.33</td>
+      <td>38.89</td>
+      <td>47.92</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5</td>
+      <td>Agustiniano</td>
+      <td>60.61</td>
+      <td>44.44</td>
+      <td>30.77</td>
+      <td>38.71</td>
+      <td>32.14</td>
+      <td>35.59</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>7</td>
+      <td>Obispo Perello</td>
+      <td>58.33</td>
+      <td>50.00</td>
+      <td>50.00</td>
+      <td>50.00</td>
+      <td>26.09</td>
+      <td>40.68</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+      <td>Velilla</td>
+      <td>72.22</td>
+      <td>61.11</td>
+      <td>16.67</td>
+      <td>43.33</td>
+      <td>46.15</td>
+      <td>44.64</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>9</td>
+      <td>San Patricio</td>
+      <td>62.86</td>
+      <td>44.83</td>
+      <td>55.56</td>
+      <td>47.37</td>
+      <td>35.71</td>
+      <td>42.42</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10</td>
+      <td>Agustiniano</td>
+      <td>61.90</td>
+      <td>68.18</td>
+      <td>31.58</td>
+      <td>51.22</td>
+      <td>26.32</td>
+      <td>43.33</td>
+    </tr>
+  </tbody>
+</table>
+                            <!-- /.table-responsive -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+        
+        
+        $('.dataframe').addClass("table table-striped table-bordered table-hover dataTable no-footer dtr-inline");
+        
+        $('.dataframe').css({ 'width': "100%" });
+        
+        $('.dataframe').DataTable({
+            responsive: true
+        });
+    });
+        
+    </script>
+
+</body>
+
+</html>
